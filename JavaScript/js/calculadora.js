@@ -1,9 +1,23 @@
-let num1 = null
+function agregarNumero(numero) {
+    const pantalla = document.getElementById('pantalla')
+    pantalla.value += numero
+}
 
-let boton1 = document.getElementsByClassName('1')
-boton1.addEventListener('click', function() {
-    num1 = 1
-})
+function operacion() {
+    const texto = document.getElementById('pantalla')
+    texto.value = eval(texto.value)
+}
 
-let texto = document.getElementsByClassName('texto') 
-texto.addEventListener()
+function limpiar() {
+    document.getElementById('pantalla').value = ""
+}
+function borrarUno() {
+    const pantalla = document.getElementById('pantalla')
+    pantalla.value = pantalla.value.slice(0, -1)
+}
+
+/*function raizCuadrada() {
+    const pantalla = document.getElementById('pantalla');
+    const valor = parseFloat(pantalla.valor)
+    pantalla.value = Math.sqrt(valor)
+}*/
