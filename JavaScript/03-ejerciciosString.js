@@ -40,5 +40,5 @@ console.log(uno == dos)
 //Ejercicio 10
 console.log(dos.length == uno.length)
 */
-let a ="Aritz  el mejo"
-console.log(a.replaceAll(" ", "-"))
+let a ="Aritz el mejo"
+console.log(a.replace(" ", "-"))

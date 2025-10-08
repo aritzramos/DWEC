@@ -1,23 +1,39 @@
-function agregarNumero(numero) {
-    const pantalla = document.getElementById('pantalla')
-    pantalla.value += numero
+
+
+
+function encender() {
+   encendido = true
 }
 
-function operacion() {
-    const texto = document.getElementById('pantalla')
-    texto.value = eval(texto.value)
-}
 
-function limpiar() {
-    document.getElementById('pantalla').value = ""
-}
-function borrarUno() {
-    const pantalla = document.getElementById('pantalla')
-    pantalla.value = pantalla.value.slice(0, -1)
-}
+    function agregarNumero(numero) {
+        if(encendido) {
+            let pantalla = document.getElementById('pantalla')
+            pantalla.value += numero
+        }
+    }
+    function operacion() {
+        if(encendido) {
+            let texto = document.getElementById('pantalla')
+            texto.value = eval(texto.value)
+        }
+    }
 
-/*function raizCuadrada() {
-    const pantalla = document.getElementById('pantalla');
-    const valor = parseFloat(pantalla.valor)
-    pantalla.value = Math.sqrt(valor)
-}*/
+    function limpiar() {
+        if(encendido) {
+            document.getElementById('pantalla').value = ""
+        }
+    }
+    function borrarUno() {
+        if(encendido) {
+            let pantalla = document.getElementById('pantalla')
+            pantalla.value = pantalla.value.slice(0, -1)
+        }
+    }
+
+    /*function raizCuadrada() {
+        const pantalla = document.getElementById('pantalla');
+        const valor = parseFloat(pantalla.valor)
+        pantalla.value = Math.sqrt(valor)
+    }*/
+
