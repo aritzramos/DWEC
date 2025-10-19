@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+    <link rel="stylesheet" href="css/calculadora.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input id="pantalla" readonly/>
+        <div>
+            <button onclick="limpiar()" class="button">C</button>
+            <button onclick="borrarUno()" class="button">DEL</button>
+            <button onclick="encender()" class="button">ON</button>
+        </div>
+        <div>
+            <button onclick="agregarNumero('1')" class="button" data-value="1">1</button>
+            <button onclick="agregarNumero('2')" class="button">2</button>
+            <button onclick="agregarNumero('3')" class="button">3</button>
+        </div>
+        <div>
+            <button onclick="agregarNumero('4')" class="button">4</button>
+            <button onclick="agregarNumero('5')" class="button">5</button>
+            <button onclick="agregarNumero('6')" class="button">6</button>
+        </div>
+        <div>
+            <button onclick="agregarNumero('7')" class="button">7</button>
+            <button onclick="agregarNumero('8')" class="button">8</button>
+            <button onclick="agregarNumero('9')" class="button">9</button>
+        </div>
+        <div>
+            <button onclick="agregarNumero('+')" class="button">+</button>
+            <button onclick="agregarNumero('0')" class="button">0</button>
+            <button onclick="agregarNumero('-')" class="button">-</button>
+        </div>
+        <div>
+            <button onclick="agregarNumero('*')" class="button">X</button>
+            <button onclick="agregarNumero('/')" class="button">/</button>
+            <button onclick="agregarNumero('.')" class="button">.</button>
+        </div>
+        <div class="final">
+            <button onclick="raizCuadrada()" class="raiz">√</button>
+            <button onclick="operacion()" class="resultado">=</button>
+        </div>
+    </div>
+       
+</body>
+</html>
